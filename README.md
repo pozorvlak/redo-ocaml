@@ -11,3 +11,6 @@ To run the example from the post, do the following:
 1. Clone the [redo repository](https://github.com/apenwarr/redo).
 2. Add it to your PATH.
 3. Run the script `demo.sh` in this directory. The output shows which files are being built at each stage, with recursive builds shown by indentation.
+
+This code is released under the Community Research and Academic Programming
+License: see the file CRAPL-LICENSE.txt for details.
