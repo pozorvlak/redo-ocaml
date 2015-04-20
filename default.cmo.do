@@ -1,6 +1,5 @@
 TEMPDIR=`mktemp -d`
-redo-ifchange $2.cmi $2.ml
-redo-ifchange `ocamldep $2.mli $2.ml`
+redo-ifchange $2.ml `ocamldep $2.mli $2.ml | grep $1 | sed -e 's/.*://'`
 cp $2.ml $TEMPDIR/$2.ml
 ocamlc $TEMPDIR/$2.ml
 mv $TEMPDIR/$2.cmo $3
