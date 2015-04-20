@@ -1,1 +1,1 @@
-rm -f *.cmo *.cmi a.out
+rm -f `redo-targets`
